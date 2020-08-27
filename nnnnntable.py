@@ -21,7 +21,7 @@ try:
 
     #retrieve data
 
-    sql = "SELECT * FROM doseresp where ObsID = 37102 "
+    sql = "SELECT * FROM doseresp where ObsID = 1160 "
     cur.execute(sql)
     results = cur.fetchall()
 
@@ -51,6 +51,9 @@ try:
 
     # 显示图表
     plt.show()
+
+
+
 
 except pymysql.Error as e:
     print ("Connection failed" +str(e))
